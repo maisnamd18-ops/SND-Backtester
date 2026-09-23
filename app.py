@@ -44,7 +44,7 @@ if not df.empty:
     df['Body'] = abs(df['Close'] - df['Open'])
     
     balance = initial_capital
-    equity_curve = []
+    equity_curve = [initial_capital]
     trade_log = []
     
     in_pos = False
